@@ -1,12 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script src="https://kit.fontawesome.com/d4fa596027.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AJIO</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 90px;
+            border: 1px solid red;
+        }
+
+        #left-side {
+            font-size: 40px;
+            color: #2f4254;
+        }
+
+        #right-side>div:nth-child(1) {
+            display: flex;
+            justify-content: right;
+        }
+
+        #right-side>div:nth-child(1)>div {
+            height: 30px;
+            width: 150px;
+            text-align: center;
+        }
+
+        #right-side>div:nth-child(1)>div>h5 {
+            margin-top: 6px;
+            color: #97a2aa;
+            cursor: pointer;
+        }
+
+        #right-side>div:nth-child(1)>div:nth-child(1)>h5:hover {
+            border-bottom: 1px solid #97a2aa;
+        }
+
+        #right-side>div:nth-child(1)>div:nth-child(2)>h5:hover {
+            border-bottom: 1px solid #97a2aa;
+        }
+
+        #right-side>div:nth-child(1)>div:nth-child(3) {
+            background-color: black;
+        }
+
+        #right-side>div:nth-child(1)>div:nth-child(3)>h5 {
+            color: white;
+        }
+
+        #right-side>div:nth-child(1)>div:nth-child(3)>h5:hover {
+            border-bottom: 1px solid white;
+        }
+
+        #right-side>div:nth-child(2) {
+            display: flex;
+            justify-content: right;
+            height: 40px;
+            border: 1px solid red;
+            margin-top: 10px;
+        }
+
+        #right-side>div:nth-child(2)>div:nth-child(1) {
+            width: 500px;
+            border: 1px solid blue;
+        }
+        #right-side>div:nth-child(2)>div:nth-child(1)>div{
+             display: flex;
+             justify-content: space-evenly;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div id="screen">
+        <div id="navbar">
+            <div id="left-side">
+                <h1>AJIO</h1>
+            </div>
+            <div id="right-side">
+                <div>
+                    <div>
+                        <h5>Sign In / Join AJIO</h5>
+                    </div>
+                    <div>
+                        <h5>Customer Care</h5>
+                    </div>
+                    <div>
+                        <h5>Visit AJIOLUXE</h5>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <div>MEN</div>
+                            <div>WOMEN</div>
+                            <div>KIDS</div>
+                            <div>INDIE</div>
+                            <div>HOME AND KITCHEN</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="text" placeholder="Search AJIO">
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </div>
 </body>
+
 </html>
