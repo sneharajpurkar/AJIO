@@ -1,12 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script src="https://kit.fontawesome.com/d4fa596027.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Men</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 90px;
+            border: 1px solid red;
+        }
+
+        #left-side {
+            font-size: 40px;
+            color: #2f4254;
+        }
+
+        #right-side>div:nth-child(1) {
+            display: flex;
+            justify-content: right;
+        }
+
+        #right-side>div:nth-child(1)>div {
+            height: 30px;
+            width: 150px;
+            text-align: center;
+        }
+
+        #right-side>div:nth-child(1)>div>h5 {
+            margin-top: 6px;
+            color: #97a2aa;
+            cursor: pointer;
+        }
+
+        #right-side>div:nth-child(1)>div:nth-child(1)>h5:hover {
+            border-bottom: 1px solid #97a2aa;
+        }
+
+        #right-side>div:nth-child(1)>div:nth-child(2)>h5:hover {
+            border-bottom: 1px solid #97a2aa;
+        }
+
+        #right-side>div:nth-child(1)>div:nth-child(3) {
+            background-color: black;
+        }
+
+        #right-side>div:nth-child(1)>div:nth-child(3)>h5 {
+            color: white;
+        }
+
+        #right-side>div:nth-child(1)>div:nth-child(3)>h5:hover {
+            border-bottom: 1px solid white;
+        }
+
+        #right-side>div:nth-child(2) {
+            display: flex;
+            justify-content: right;
+            height: 40px;
+            margin-top: 10px;
+        }
+
+        #right-side>div:nth-child(2)>div:nth-child(1) {
+            width: 500px;
+        }
+
+        #right-side>div:nth-child(2)>div:nth-child(1)>div {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+        }
+
+        #right-side>div:nth-child(2)>div:nth-child(2) {
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+            width: 300px;
+            border-radius: 35px;
+            border: 1px solid #2f4254;
+            background-color: #fffded;
+        }
+
+        #right-side>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>input {
+            border: none;
+            outline: none;
+            background-color: #fffded;
+            padding: 12px;
+            margin-left: 15px;
+        }
+
+        #right-side>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>i {
+            padding: 12px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        #right-side>div:nth-child(2)>div:nth-child(3) {
+            margin-left: 15px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #right-side>div:nth-child(2)>div:nth-child(3)>div {
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            background-color: #2f4254;
+            color: white;
+        }
+
+        #right-side>div:nth-child(2)>div:nth-child(3)>div>i {
+            margin-left: 12px;
+            margin-top: 12px;
+        }
+
+        #right-side>div:nth-child(2)>div:nth-child(3)>div:nth-child(2) {
+            margin-left: 15px;
+            cursor: pointer;
+        }
+
+        #body {
+            width: 100%;
+            height: 1000px;
+            border: 1px solid red;
+            display: flex;
+        }
+
+        #left-side2 {
+            width: 20%;
+            height: 800px;
+            margin-left: 5%;
+        }
+
+        #left-side2>div:nth-child(1) {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            margin-top: 40px;
+        }
+
+        #left-side2>div:nth-child(2)>div:nth-child(1) {
+            width: 100;
+            height: 100px;
+            border-bottom: 1px solid rgb(218, 216, 216);
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        #left-side2>div:nth-child(2)>div:nth-child(1)>li {
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+
+        #left-side2>div:nth-child(2)>div:nth-child(2) {
+            width: 100;
+            height: 200px;
+            border-bottom: 1px solid rgb(218, 216, 216);
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        #left-side2>div:nth-child(2)>div:nth-child(2)>li {
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+
+        #left-side2>div:nth-child(2)>div:nth-child(3) {
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            height: 35px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-top: 15px;
+        }
+
+        #left-side2>div:nth-child(2)>div:nth-child(4) {
+            border-bottom: 1px solid gray;
+            height: 35px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-top: 15px;
+        }
+
+        #left-side2>div:nth-child(2)>div:nth-child(5) {
+
+            border-bottom: 1px solid gray;
+            height: 35px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-top: 15px;
+        }
+
+        #left-side2>div:nth-child(2)>div:nth-child(6) {
+            border-bottom: 1px solid gray;
+            height: 35px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-top: 15px;
+        }
+
+        #left-side2>div:nth-child(2)>div:nth-child(7) {
+            border-bottom: 1px solid gray;
+            height: 35px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-top: 15px;
+        }
+
+        #left-side2>div:nth-child(2)>div:nth-child(8) {
+            border-bottom: 1px solid gray;
+            height: 35px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-top: 15px;
+        }
+
+        #left-side2>div:nth-child(2)>div:nth-child(9) {
+            height: 65px;
+            margin-right: 10px;
+            padding-top: 5px;
+            width: 100%;
+        }
+
+        #right-side2 {
+            width: 70%;
+            border: 1px solid blue;
+        }
+
+        #right-side2>div:nth-child(1) {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 40px;
+        }
+
+        #right-side2>div:nth-child(2) {
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid gray;
+            margin-top: 30px;
+            height: 40px;
+            padding-top: 15px;
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div id="screen">
+        <div id="navbar">
+            <div id="left-side">
+                <h1>AJIO</h1>
+            </div>
+            <div id="right-side">
+                <div>
+                    <div>
+                        <h5>Sign In / Join AJIO</h5>
+                    </div>
+                    <div>
+                        <h5>Customer Care</h5>
+                    </div>
+                    <div>
+                        <h5>Visit AJIOLUXE</h5>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <div><a href="https://www.ajio.com/s/topwear-4439-52291">MEN</a></div>
+                            <div>WOMEN</div>
+                            <div>KIDS</div>
+                            <div>INDIE</div>
+                            <div>HOME AND KITCHEN</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="text" placeholder="Search AJIO">
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div><i class="fa-regular fa-heart"></i></div>
+                        <div><i class="fa-solid fa-bag-shopping"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="body">
+            <div id="left-side2">
+                <div>
+                    <h3>Refined By</h3>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div>
+                    <div>
+                        <h3>- Gender</h3>
+                        <li>Men (159,371)</li>
+                        <li>Women (18)</li>
+                    </div>
+                    <div>
+                        <h3>- Category</h3>
+                        <li>Tshirts (73,856)</li>
+                        <li>Shirts (50,667)</li>
+                        <li>Sweatshirt & Hoodies (15,162)</li>
+                        <li>Kurtas & Shirts (9,621)</li>
+                        <li>Jackets & Coats (8,366)</li>
+                    </div>
+                    <div>
+                        <h3>+ Price</h3>
+                    </div>
+                    <div>
+                        <h3>+ Brands</h3>
+                    </div>
+                    <div>
+                        <h3>+ Occasion</h3>
+                    </div>
+                    <div>
+                        <h3>+ Discount</h3>
+                    </div>
+                    <div>
+                        <h3>+ Colors</h3>
+                    </div>
+                    <div>
+                        <h3>+ Size & Fit</h3>
+                    </div>
+                    <div>
+                        <h3>More Filters</h3>
+                        <span style="color: gray;">
+                            <p>Please select upto 3 categories to view more filters</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="right-side2">
+                <div>Topwear</div>
+                <div>
+                    <div>159,184 Items Found</div>
+                    <div>
+                        GRID
+                    </div>
+                    <div>
+                        <label>SORT BY</label>
+                        <select>
+                            <option value="Relevance">Relevance</option>
+                            <option value="Price (lowest first)">Price (lowest first)</option>
+                            <option value="Relevance">Relevance</option>
+                            <option value="Discount">Discount</option>
+                            <option value="Price (highest first)">Price (highest first)</option>
+                            <option value="What's New">What's New</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="images1">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="images2"></div>
+                <div id="images3"></div>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
+
 </html>
