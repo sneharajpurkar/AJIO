@@ -18,7 +18,7 @@
             justify-content: space-around;
             width: 100%;
             height: 90px;
-            border: 1px solid red;
+            border-bottom: 1px solid #2f4254;
         }
 
         #left-side {
@@ -130,14 +130,13 @@
 
         #body {
             width: 100%;
-            height: 1000px;
-            border: 1px solid red;
+            height: 1750px;
             display: flex;
         }
 
         #left-side2 {
             width: 20%;
-            height: 800px;
+            height: 900px;
             margin-left: 5%;
         }
 
@@ -148,13 +147,21 @@
             margin-top: 40px;
         }
 
+        #left-side2>div:nth-child(1)>h3 {
+            margin-left: 10px;
+        }
+
+        #left-side2>div:nth-child(1)>i {
+            margin-right: 20px;
+        }
+
         #left-side2>div:nth-child(2)>div:nth-child(1) {
             width: 100;
             height: 100px;
             border-bottom: 1px solid rgb(218, 216, 216);
             margin-top: 20px;
             margin-left: 10px;
-            margin-right: 10px;
+            margin-right: 20px;
         }
 
         #left-side2>div:nth-child(2)>div:nth-child(1)>li {
@@ -168,7 +175,7 @@
             border-bottom: 1px solid rgb(218, 216, 216);
             margin-top: 20px;
             margin-left: 10px;
-            margin-right: 10px;
+            margin-right: 20px;
         }
 
         #left-side2>div:nth-child(2)>div:nth-child(2)>li {
@@ -177,65 +184,81 @@
         }
 
         #left-side2>div:nth-child(2)>div:nth-child(3) {
-            border-top: 1px solid gray;
-            border-bottom: 1px solid gray;
+            border-bottom: 1px solid rgb(218, 216, 216);
             height: 35px;
             margin-left: 10px;
-            margin-right: 10px;
+            margin-right: 20px;
             padding-top: 15px;
         }
 
         #left-side2>div:nth-child(2)>div:nth-child(4) {
-            border-bottom: 1px solid gray;
+            border-bottom: 1px solid rgb(218, 216, 216);
             height: 35px;
             margin-left: 10px;
-            margin-right: 10px;
+            margin-right: 20px;
             padding-top: 15px;
         }
 
         #left-side2>div:nth-child(2)>div:nth-child(5) {
 
-            border-bottom: 1px solid gray;
+            border-bottom: 1px solid rgb(218, 216, 216);
             height: 35px;
             margin-left: 10px;
-            margin-right: 10px;
+            margin-right: 20px;
             padding-top: 15px;
         }
 
         #left-side2>div:nth-child(2)>div:nth-child(6) {
-            border-bottom: 1px solid gray;
+            border-bottom: 1px solid rgb(218, 216, 216);
             height: 35px;
             margin-left: 10px;
-            margin-right: 10px;
+            margin-right: 20px;
             padding-top: 15px;
         }
 
         #left-side2>div:nth-child(2)>div:nth-child(7) {
-            border-bottom: 1px solid gray;
+            border-bottom: 1px solid rgb(218, 216, 216);
             height: 35px;
             margin-left: 10px;
-            margin-right: 10px;
+            margin-right: 20px;
             padding-top: 15px;
         }
 
         #left-side2>div:nth-child(2)>div:nth-child(8) {
-            border-bottom: 1px solid gray;
+            border-bottom: 1px solid rgb(218, 216, 216);
             height: 35px;
             margin-left: 10px;
-            margin-right: 10px;
+            margin-right: 20px;
             padding-top: 15px;
         }
 
-        #left-side2>div:nth-child(2)>div:nth-child(9) {
-            height: 65px;
-            margin-right: 10px;
-            padding-top: 5px;
-            width: 100%;
+        #left-side2>div:nth-child(3) {
+            margin-top: 15px;
+        }
+
+        #left-side2>div:nth-child(3)>div:nth-child(1) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #left-side2>div:nth-child(3)>div:nth-child(1)>h3 {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        #left-side2>div:nth-child(3)>div:nth-child(1)>i {
+            margin-right: 20px;
+        }
+
+        #left-side2>div:nth-child(3)>p {
+            font-size: 17px;
+            margin-left: 10px;
+            margin-right: 17px;
+            margin-top: 10px;
         }
 
         #right-side2 {
             width: 70%;
-            border: 1px solid blue;
         }
 
         #right-side2>div:nth-child(1) {
@@ -247,11 +270,27 @@
         #right-side2>div:nth-child(2) {
             display: flex;
             justify-content: space-around;
-            border: 1px solid gray;
+            border: 1px solid rgb(218, 216, 216);
             margin-top: 30px;
             height: 40px;
             padding-top: 15px;
             background-color: #f9f9f9;
+        }
+
+        #picture {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #images1 {
+            height: 500px;
+            width: 32%;
+            margin-top: 20px;
+        }
+
+        #images1>div:nth-child(1)>img {
+            height: 400px;
+            width: 100%;
         }
     </style>
 </head>
@@ -277,7 +316,7 @@
                 <div>
                     <div>
                         <div>
-                            <div><a href="https://www.ajio.com/s/topwear-4439-52291">MEN</a></div>
+                            <div>MEN</div>
                             <div>WOMEN</div>
                             <div>KIDS</div>
                             <div>INDIE</div>
@@ -337,14 +376,16 @@
                     <div>
                         <h3>+ Size & Fit</h3>
                     </div>
+                </div>
+                <div>
                     <div>
                         <h3>More Filters</h3>
-                        <span style="color: gray;">
-                            <p>Please select upto 3 categories to view more filters</p>
-                        </span>
+                        <i class="fa-solid fa-angle-up"></i>
                     </div>
+                    <p>Please select upto 3 categories to view more filters</p>
                 </div>
             </div>
+
             <div id="right-side2">
                 <div>Topwear</div>
                 <div>
@@ -364,13 +405,102 @@
                         </select>
                     </div>
                 </div>
-                <div id="images1">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div id="picture">
+                    <div id="images1">
+                        <div>
+                            <img
+                                src="https://assets.ajio.com/medias/sys_master/root/20220324/hmQq/623c6fdef997dd03e22cd5a7/-473Wx593H-463775643-blue-MODEL.jpg">
+                            <div style="color:brown; text-align: center;">The Indian Garage Co</div>
+                            <div style="text-align: center;">Striped Slim Fit Shirt with Patch Pocket</div>
+                            <div style="text-align: center;">₹610(63% off)</div>
+                            <div style="color: #53bf60; text-align: center;">Offer price ₹561</div>
+                        </div>
+                    </div>
+                    <div id="images1">
+                        <div>
+                            <img
+                                src="https://assets.ajio.com/medias/sys_master/root/20211023/dEWu/61730697aeb2690110a3a43d/-473Wx593H-460453610-white-MODEL.jpg">
+                            <div style="color:brown; text-align: center;">Campus Sutra</div>
+                            <div style="text-align: center;">Checked Shirt with Patch Pocket</div>
+                            <div style="text-align: center;">₹1,119(30% off)</div>
+                            <div style="color: #53bf60; text-align: center;">Offer price ₹7,683</div>
+                        </div>
+                    </div>
+                    <div id="images1">
+                        <div>
+                            <img
+                                src="https://assets.ajio.com/medias/sys_master/root/20220128/vvDs/61f4077caeb2695cdd3889a7/-473Wx593H-441134897-navy-MODEL.jpg">
+                            <div style="color:brown; text-align: center;">THE BEAR HOUSE</div>
+                            <div style="text-align: center;">Checked Slim Fit Shirt with Patch Pocket</div>
+                            <div style="text-align: center;">₹1,248(50% OFF)</div>
+                            <div style="color: #53bf60; text-align: center;">Offer price ₹1,247</div>
+                        </div>
+                    </div>
                 </div>
-                <div id="images2"></div>
-                <div id="images3"></div>
+                <div id="picture">
+                    <div id="images1">
+                        <div>
+                            <img
+                                src="https://assets.ajio.com/medias/sys_master/root/20221124/DXIQ/637ea1fbf997ddfdbd964994/-473Wx593H-465330753-mustard-MODEL.jpg">
+                            <div style="color:brown; text-align: center;">THE BEAR HOUSE</div>
+                            <div style="text-align: center;">Checked Slim Fit Shirt with Patch Pocket</div>
+                            <div style="text-align: center;">₹1,123(55% OFF)</div>
+                            <div style="color: #53bf60; text-align: center;">Offer price ₹1,122</div>
+                        </div>
+                    </div>
+                    <div id="images1">
+                        <div>
+                            <img
+                                src="https://assets.ajio.com/medias/sys_master/root/20220513/5arK/627e2306aeb26921af76b77c/-473Wx593H-461725396-maroon-MODEL.jpg">
+                            <div style="color:brown; text-align: center;">THE BEAR HOUSE</div>
+                            <div style="text-align: center;">Slim Fit Checked Shirt</div>
+                            <div style="text-align: center;">₹1,248(50% OFF)</div>
+                            <div style="color: #53bf60; text-align: center;">Offer price ₹1,247</div>
+                        </div>
+                    </div>
+                    <div id="images1">
+                        <div>
+                            <img
+                                src="https://assets.ajio.com/medias/sys_master/root/20220513/TdEM/627e2384f997dd03e2b9b260/-1117Wx1400H-461725359-red-MODEL.jpg">
+                            <div style="color:brown; text-align: center;">THE BEAR HOUSE</div>
+                            <div style="text-align: center;">Slim Fit Checked Shirt</div>
+                            <div style="text-align: center;">₹1,123(55% OFF)</div>
+                            <div style="color: #53bf60; text-align: center;">Offer price ₹1,098</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="picture">
+                    <div id="images1">
+                        <div>
+                            <img
+                                src="https://assets.ajio.com/medias/sys_master/root/20220513/AhGv/627e22c9f997dd03e2b9a400/-473Wx593H-461653441-maroon-MODEL.jpg">
+                            <div style="color:brown; text-align: center;">THE BEAR HOUSE</div>
+                            <div style="text-align: center;">Checked Slim Fit Shirt with Patch Pocket</div>
+                            <div style="text-align: center;">₹1,248(50% OFF)</div>
+                            <div style="color: #53bf60; text-align: center;">Offer price ₹1,247</div>
+                        </div>
+                    </div>
+                    <div id="images1">
+                        <div>
+                            <img
+                                src="https://assets.ajio.com/medias/sys_master/root/20220513/ttww/627e24a8f997dd03e2b9cadb/-473Wx593H-464175948-white-MODEL.jpg">
+                            <div style="color:brown; text-align: center;">THE BEAR HOUSE</div>
+                            <div style="text-align: center;">Striped Slim Fit Shirt</div>
+                            <div style="text-align: center;">₹1,497(40% OFF)</div>
+                            <div style="color: #53bf60; text-align: center;">Offer price ₹1,496</div>
+                        </div>
+                    </div>
+                    <div id="images1">
+                        <div>
+                            <img
+                                src="https://assets.ajio.com/medias/sys_master/root/20221117/2r8w/6375d715aeb269659c97f84a/-473Wx593H-462152986-green-MODEL.jpg">
+                            <div style="color:brown; text-align: center;">DENNISLINGO PREMIUM ATTIRE</div>
+                            <div style="text-align: center;">Striped Slim Fit Shirt</div>
+                            <div style="text-align: center;">₹750(70% OFF)</div>
+                            <div style="color: #53bf60; text-align: center;">Offer price ₹650</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
