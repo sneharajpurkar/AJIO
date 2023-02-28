@@ -554,7 +554,7 @@
             margin-top: 30px;
         }
 
-        #footer>div:nth-child(2)>div:nth-child(3)>div{
+        #footer>div:nth-child(2)>div:nth-child(3)>div {
             height: 40px;
             width: 40px;
             border-radius: 20px;
@@ -563,14 +563,183 @@
             margin-right: 20px;
             cursor: pointer;
         }
-        #footer>div:nth-child(2)>div:nth-child(3)>div:nth-child(2){
+
+        #footer>div:nth-child(2)>div:nth-child(3)>div:nth-child(2) {
             margin-top: 5px;
         }
-        #footer>div:nth-child(2)>div:nth-child(3)>div>i{
+
+        #footer>div:nth-child(2)>div:nth-child(3)>div>i {
             margin-top: 13px;
             margin-left: 13px;
         }
 
+        @media screen and (max-width:500px) {
+            #screen {
+                width: 500px;
+                border: 1px solid black;
+            }
+
+            #navbar {
+                width: 50%;
+                display: flex;
+                justify-content: left;
+            }
+
+            #left-side {
+                font-size: 20px;
+            }
+
+            #right-side>div:nth-child(1) {
+                display: flex;
+                justify-content: flex-start;
+                margin-left: 150px;
+            }
+
+            #right-side>div:nth-child(1)>div {
+                width: 75px;
+                font-size: 12px;
+            }
+            #right-side>div:nth-child(2)>div:nth-child(1){
+               width: 250px;
+               font-size: 8px;
+               display: none;
+               
+            }
+            #right-side>div:nth-child(2)>div:nth-child(2){
+                width: 200px;
+                font-size: 12px;
+            }
+            #right-side>div:nth-child(2)>div:nth-child(2)>div:nth-child(1){
+                width: 50px;
+            }
+            #right-side>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>input{
+                width: 45px;
+            }
+            
+            #body {
+                width: 500px;
+            }
+
+            #img7 {
+                width: 33.3%;
+            }
+
+            #img9 {
+                width: 25%;
+            }
+
+            #img14 {
+                width: 25%;
+            }
+
+            #img16 {
+                width: 25%;
+            }
+
+            #img20 {
+                width: 25%;
+            }
+
+            #img21 {
+                width: 25%;
+            }
+
+            #img22 {
+                width: 25%;
+            }
+
+            #img24 {
+                width: 25%;
+            }
+
+            #img26 {
+                width: 33%;
+            }
+
+            #img28 {
+                width: 25%;
+            }
+
+            #img30 {
+                width: 25%;
+            }
+
+            #img32 {
+                width: 25%;
+            }
+
+            #img34 {
+                width: 25%;
+            }
+
+            #img35 {
+                width: 25%;
+            }
+
+            #img36 {
+                width: 25%;
+            }
+
+            #img38 {
+                width: 25%;
+            }
+
+            #img40 {
+                width: 25%;
+            }
+
+            #img42 {
+                width: 33%;
+            }
+
+            #img43 {
+                width: 33%;
+            }
+
+            #img44 {
+                width: 33%;
+            }
+
+            #img45 {
+                width: 33%;
+            }
+
+            #img47 {
+                width: 25%;
+            }
+
+            #img49 {
+                width: 25%;
+            }
+
+            #img51 {
+                width: 33%;
+            }
+
+            #img52 {
+                width: 33%;
+            }
+
+            #img53 {
+                width: 33%;
+            }
+
+            #footer>div:nth-child(2) {
+                margin-left: 0;
+            }
+            #bottom{
+                height: 80px;
+            }
+            #bottom>div>i {
+                font-size: 30px;
+                margin-top: 10px;
+                margin-left: 48px;
+            }
+            #bottom>div>h4{
+                font-size: 15px;
+                margin-top: 10px;
+            }
+        }
     </style>
 </head>
 
@@ -582,8 +751,9 @@
             </div>
             <div id="right-side">
                 <div>
-                    <div>
+                    <div><a href="/login.html">
                         <h5>Sign In / Join AJIO</h5>
+                        </a>
                     </div>
                     <div>
                         <h5>Customer Care</h5>
