@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/d4fa596027.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 90px;
+            border: 1px solid grey;
+        }
+
+        #left-side {
+            font-size: 40px;
+            color: #2f4254;
+        }
+
+        #right-side>div:nth-child(1) {
+            display: flex;
+            justify-content: right;
+        }
+
+        #right-side>div:nth-child(1)>div {
+            height: 30px;
+            width: 150px;
+            text-align: center;
+        }
+
+        #right-side>div:nth-child(1)>div>h5 {
+            margin-top: 6px;
+            color: #97a2aa;
+            cursor: pointer;
+        }
+
+        #right-side>div:nth-child(1)>div:nth-child(1)>h5:hover {
+            border-bottom: 1px solid #97a2aa;
+        }
+
+        #right-side>div:nth-child(1)>div:nth-child(2)>h5:hover {
+            border-bottom: 1px solid #97a2aa;
+        }
+
+        #right-side>div:nth-child(1)>div:nth-child(3) {
+            background-color: black;
+        }
+
+        #right-side>div:nth-child(1)>div:nth-child(3)>h5 {
+            color: white;
+        }
+
+        #right-side>div:nth-child(1)>div:nth-child(3)>h5:hover {
+            border-bottom: 1px solid white;
+        }
+
+        #cartProducts {
+            margin-top: 10px;
+            display: flex;
+            height: 350px;
+            width: 40%;
+        }
+
+        #cartProducts1 {
+            height: 250px;
+            width: 40%;
+            margin-left: 15px;
+        }
+
+        #cartProducts1>img {
+            height: 250px;
+            width: 100%;
+            margin-left: 220px;
+        }
+
+        #cartProducts1>h1 {
+            margin-top: 0;
+            font-size: 15px;
+            margin-left: 220px;
+        }
+
+        #cartProducts1>p {
+            font-size: 16px;
+            margin-top: -10px;
+            margin-left: 220px;
+        }
+
+        button {
+            height: 30px;
+            width: 100px;
+            background-color: #2f4254;
+            color: white;
+            border: none;
+            outline: none;
+            margin-left: 220px;
+        }
+
+        #cart {
+            margin-top: 20px;
+            margin-left: 220px;
+        }
+
+        #bottom {
+            height: 130px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            border: 1px solid #2f4254;
+            margin-top: 200px;
+        }
+
+        #bottom>div>i {
+            font-size: 60px;
+            margin-left: 43px;
+            margin-top: 15px;
+        }
+
+        #bottom>div>h4 {
+            margin-top: 25px;
+            color: #2f4254;
+        }
+
+        #footer {
+            width: 100%;
+            height: 500px;
+            border: 1px solid blue;
+            background-color: #2f4254;
+            color: #b8c4cd;
+            font-size: 14px;
+        }
+
+        #footer>div:nth-child(1) {
+            display: flex;
+            justify-content: space-evenly;
+            width: 90%;
+            height: 370px;
+            border-bottom: 1px solid #b8c4cd;
+            margin-left: 5%;
+        }
+
+        #footer>div:nth-child(1)>div {
+            margin-top: 45px;
+        }
+
+        #footer>div:nth-child(1)>div>div:nth-child(1) {
+            font-size: 17px;
+        }
+
+        #footer>div:nth-child(1)>div>div:nth-child(2) {
+            margin-top: 25px;
+        }
+
+        #footer>div:nth-child(1)>div>div:nth-child(2)>div {
+            margin-top: 10px;
+        }
+
+        #footer>div:nth-child(2) {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 230px;
+        }
+
+        #footer>div:nth-child(2)>div>div:nth-child(1) {
+            margin-top: 30px;
+            font-size: 18px;
+        }
+
+        #footer>div:nth-child(2)>div:nth-child(1)>div:nth-child(2) {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        #footer>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)>p:nth-child(2),
+        p:nth-child(3),
+        p:nth-child(4),
+        p:nth-child(5) {
+            margin-left: 25px;
+        }
+
+        #footer>div:nth-child(2)>div:nth-child(2)>div:nth-child(2) {
+            margin-top: 30px;
+        }
+
+        #footer>div:nth-child(2)>div:nth-child(3)>div {
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            background-color: white;
+            color: #2f4254;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        #footer>div:nth-child(2)>div:nth-child(3)>div:nth-child(2) {
+            margin-top: 5px;
+        }
+
+        #footer>div:nth-child(2)>div:nth-child(3)>div>i {
+            margin-top: 13px;
+            margin-left: 13px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="left-side">
+            <h1>AJIO</h1>
+        </div>
+        <div id="right-side">
+            <div>
+                <div><a href="/login.html">
+                        <h5>Sign In / Join AJIO</h5>
+                    </a>
+                </div>
+                <div>
+                    <h5>Customer Care</h5>
+                </div>
+                <div>
+                    <h5>Visit AJIOLUXE</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 id="cart">Add to cart</h1>
+    <div id="cartProducts">
+
+    </div>
+    <button onclick="buyProducts()">Product buy</button>
+
+    <div id="bottom">
+        <div>
+            <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+            <h4>EASY EXCHANGE</h4>
+        </div>
+        <div>
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <h4>100% HANDPICKED</h4>
+        </div>
+        <div>
+            <i class="fa-solid fa-circle-check"></i>
+            <h4>ASSURED QUALITY</h4>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <div>
+                <div>Ajio</div>
+                <div>
+                    <div>Who We Are</div>
+                    <div>Join Our Team</div>
+                    <div>Terms & Conditions</div>
+                    <div>We Respect Your Privacy</div>
+                    <div>Fees & Payments</div>
+                    <div>Returns & Refunds Policy</div>
+                    <div>Promotions Terms & Conditions</div>
+                </div>
+            </div>
+            <div>
+                <div>Help</div>
+                <div>
+                    <div>Track Your Order</div>
+                    <div>Frequently Asked Questions</div>
+                    <div>Returns</div>
+                    <div>Cancellations</div>
+                    <div>Payments</div>
+                    <div>Customer Care</div>
+                    <div>How Do I Redeem My Coupon</div>
+                </div>
+            </div>
+            <div>
+                <div>Shop by</div>
+                <div>
+                    <div>Men</div>
+                    <div>Women</div>
+                    <div>Kids</div>
+                    <div>Indie</div>
+                    <div>Stores</div>
+                    <div>New Arrivals</div>
+                    <div>Brand Directory</div>
+                    <div>Home</div>
+                    <div>Collections</div>
+                </div>
+            </div>
+            <div>
+                <div>Follow us</div>
+                <div>
+                    <div>Facebook</div>
+                    <div>Instagram- AJIOlife</div>
+                    <div>Instagram- AJIO LUXE</div>
+                    <div>Twitter</div>
+                    <div>Pinterest</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>Payment methods</div>
+                <div>
+                    <p>Net Banking</p>
+                    <p>Verified by VISA</p>
+                    <p>Master Card</p>
+                    <p>CASH ON DELIVERY</p>
+                    <p>Jio Money </p>
+                </div>
+            </div>
+            <div>
+                <div>Secure systems</div>
+                <div>SSL 256 BIT ENCRYPTION</div>
+            </div>
+            <div>
+                <div><i class="fa-solid fa-angle-up"></i></div>
+                <div><i class="fa-solid fa-ellipsis"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            var dataFromLS = JSON.parse(localStorage.getItem("current-user"));
+            if (!dataFromLS) {
+                window.location.href = '/login.html';
+                alert("Cant access cart without login, please login first...")
+            } else {
+                var dataFromLS = JSON.parse(localStorage.getItem("userData"));
+                var currentUser = JSON.parse(localStorage.getItem("current-user"));
+                var divFromHtml = document.getElementById("cartProducts");
+                var cartProducts;
+                var flag = false;
+                for (var i = 0; i < dataFromLS.length; i++) {
+                    if (dataFromLS[i].email === currentUser["current-user-email"] && dataFromLS[i].cartProducts) {
+                        cartProducts = dataFromLS[i].cartProducts;
+                        flag = true;
+                    }
+                }
+                if (flag === false) {
+                    alert("No product added to cart, Go and buy some prodcuts!!")
+                } else {
+                    console.log(cartProducts, 'cartProducts')
+                    var productsWithHTMl = [];
+                    for (var i = 0; i < cartProducts.length; i++) {
+                        productsWithHTMl += `<div id="cartProducts1"><img src='${cartProducts[i].image}' /><br/><h1>${cartProducts[i].name}</h1><br/><p>${cartProducts[i].price}</p></div>`;
+                    }
+                    divFromHtml.innerHTML = productsWithHTMl;
+                }
+            }
+        };
+
+        function buyProducts() {
+            // alert('Working!')
+            var dataFromLS = JSON.parse(localStorage.getItem("userData"));
+            var currentUser = JSON.parse(localStorage.getItem("current-user"));
+            var updatedUser = [];
+            for (var i = 0; i < dataFromLS.length; i++) {
+                if (dataFromLS[i].email === currentUser["current-user-email"] && dataFromLS[i].cartProducts) {
+                    dataFromLS[i].cartProducts = [];
+                    updatedUser.push(dataFromLS[i])
+                } else {
+                    updatedUser.push(dataFromLS[i])
+                }
+            }
+            // console.log(updatedUser,"updatedUser")
+            localStorage.setItem("userData", JSON.stringify(updatedUser));
+            window.location.href = '/navbar.html';
+            alert("Products will deliver soon.")
+        }
+    </script>
+</body>
+
+</html>
