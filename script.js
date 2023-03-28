@@ -102,13 +102,12 @@ function newPassword() {
 
 
 function addToLS(){
+    var dataFromLS = JSON.parse(localStorage.getItem("products")) || [] ; 
     var proName = document.getElementById("name").value;
     var proImage = document.getElementById("image").value;
     var proPrice = document.getElementById("price").value;
 
-    var product = { name:proName, price:proPrice , image:proImage }
-
-    var dataFromLS = JSON.parse(localStorage.getItem("products")) || [] ; 
+    var product = { name:proName, price:proPrice , image:proImage } 
     dataFromLS.push(product);
 
     localStorage.setItem("products", JSON.stringify(dataFromLS));
